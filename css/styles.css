@@ -1,0 +1,125 @@
+:root {
+    --cor-do-cabecalho: #2E7BA2;
+    --cor-da-fonte: #444444;
+    --cor-do-gradiente1: #C8DEEF;
+    --cor-do-gradiente2: #FBF0DD;
+    --cor-do-gradiente3: #FACF9D;
+    --fonte-primaria: 'Calistoga', serif;
+    --fonte-secundaria: 'Raleway', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(var(--cor-do-gradiente1),var(--cor-do-gradiente2),var(--cor-do-gradiente3));
+}
+
+.cabecalho {
+    background-color: var(--cor-do-cabecalho);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.bemvindo {
+    background-image: url(../img/Banner.png);
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    color: var(--cor-da-fonte);
+    line-height: 2.6rem;
+    width: 100%;
+    height: 16.875rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.apresentacao {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+}
+
+.apresentacao__botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+    width: 19.5rem;
+    height: 3.5rem;
+    background-color: var(--cor-do-cabecalho);
+    filter: drop-shadow(0.2rem 0.2rem var(--cor-da-fonte));
+}
+
+.apresentacao__titulo {
+    color: var(--cor-da-fonte);
+    padding-top: 2rem;
+    font-size: 2rem;
+    line-height: 2.348125rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.apresentacao__texto {
+    color: var(--cor-da-fonte);
+    padding: 1.5rem 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+.apresentacao a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.apresentacao__legenda {
+    font-weight: 700;
+}
+
+.material-icons {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.lineup__titulo {
+    display: flex;
+    justify-content: center;
+}
+.lineup__dia {
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.lineup__dia div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lineup__1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.lineup__2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.lineup__3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.lineup__4 {
+    font-size: 2rem;
+    font-weight: 500;
+}
