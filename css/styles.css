@@ -1,6 +1,8 @@
 :root {
     --cor-do-cabecalho: #2E7BA2;
     --cor-da-fonte: #444444;
+    --branco: #FFFFFF;
+    --fundo-lineup: #DF9010;
     --cor-do-gradiente1: #C8DEEF;
     --cor-do-gradiente2: #FBF0DD;
     --cor-do-gradiente3: #FACF9D;
@@ -74,7 +76,7 @@ body {
 
 .apresentacao a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--branco);
 }
 
 .apresentacao__legenda {
@@ -89,37 +91,71 @@ body {
 .lineup__titulo {
     display: flex;
     justify-content: center;
+    font-family: var(--fonte-primaria);
+    font-size: 3rem;
+    padding: 1rem;
 }
 .lineup__dia {
     font-family: var(--fonte-secundaria);
     display: flex;
     flex-direction: column;
+    margin: 3rem 0;
+    padding: 0 1.5rem;
     gap: 2rem;
     align-items: center;
 }
 
-.lineup__dia div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.lineup__dia__legenda {
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    line-height: 2.6rem;
+    padding: 1rem 0.9rem;
+    color: var(--branco);
+    background-color: var(--fundo-lineup);
+    text-transform: uppercase;
 }
 
 .lineup__1 {
+    text-align: center;
     font-size: 3rem;
     font-weight: 700;
 }
 
 .lineup__2 {
+    text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
 }
 
 .lineup__3 {
+    text-align: center;
     font-size: 2rem;
     font-weight: 700;
 }
 
 .lineup__4 {
+    text-align: center;
     font-size: 2rem;
     font-weight: 500;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+    margin: 1rem 0 2.5rem 0;
+}
+
+.rodape h3 {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.rodape__icones {
+    margin: 1rem 0 2rem 0;
 }
