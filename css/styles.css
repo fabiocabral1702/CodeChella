@@ -19,7 +19,60 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 2rem;
+    position: relative;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 70%;
+    right: 0;
+    background-color: var(--cor-do-cabecalho);
+    padding: 1rem 0;
+    width: 193px;
+    height: 243px;
+    text-align: center;
+}
+
+.lista-menu__item {
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.lista-menu__separador {
+    height: 1px;
+    margin: 0.8rem 1.2rem;
+    background-color: var(--branco);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.container__imagem {
+    display: flex;
+    background-image: url(../img/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2rem;
+    height: 2.5rem;
 }
 
 .bemvindo {
@@ -34,7 +87,118 @@ body {
     height: 16.875rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
+}
+
+.experiencia {
+    background-image: url(../img/Banner2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    color: var(--cor-da-fonte);
+    line-height: 2.6rem;
+    width: 100%;
+    height: 16.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.setores {
+    background-image: url(../img/Bannersetor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    color: var(--cor-da-fonte);
+    line-height: 2.6rem;
+    width: 100%;
+    height: 16.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.informacoes {
+    background-image: url(../img/Bannerinfo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    color: var(--cor-da-fonte);
+    line-height: 2.6rem;
+    width: 100%;
+    height: 16.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ingresso {
+    background-image: url(../img/Banneringresso.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    color: var(--cor-da-fonte);
+    line-height: 2.6rem;
+    width: 100%;
+    height: 16.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.comprado {
+    background-image: url(../img/Bannercomprado.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    color: var(--cor-da-fonte);
+    line-height: 2.6rem;
+    width: 100%;
+    height: 16.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pista__premium {
+    width: 2rem;
+    height: 2rem;
+    background-color: #0E7DF1;
+}
+
+.pista__comum {
+    width: 2rem;
+    height: 2rem;
+    background-color: #FE016E;
+}
+
+.cadeiras__terreo {
+    width: 2rem;
+    height: 2rem;
+    background-color: #01A89E;
+}
+
+.cadeiras__superiores {
+    width: 2rem;
+    height: 2rem;
+    background-color: #3F51B5;
+}
+
+.rampas {
+    width: 2rem;
+    height: 2rem;
+    background-color: #0E7DF1;
 }
 
 .apresentacao {
@@ -45,7 +209,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 1.5rem;
+    padding: 0 1.5rem 2rem 1.5rem;
 }
 
 .apresentacao__botao {
@@ -81,8 +245,24 @@ body {
     color: var(--branco);
 }
 
+.apresentacao__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .apresentacao__legenda {
     font-weight: 700;
+}
+
+.apresentacao__legenda__linha {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.apresentacao__legenda__item {
+    font-weight: 500;
 }
 
 .material-icons {
@@ -149,13 +329,216 @@ body {
     height: 338px;
 }
 
+.faq__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    line-height: 2.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.faq {
+    padding: 3rem 1.5rem 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.faq__pergunta__box {
+    background-color: var(--cor-do-cabecalho);
+    font-family: var(--fonte-secundaria);
+    color: var(--branco);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.faq__resposta {
+    background-color: #C8DEEF;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-da-fonte);
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.faq__resposta1 {
+    background-color: #C8DEEF;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-da-fonte);
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.faq__resposta2 {
+    background-color: #C8DEEF;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-da-fonte);
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.faq__resposta3 {
+    background-color: #C8DEEF;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-da-fonte);
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.campos__elemento {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.campos__titulo {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-da-fonte);
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+}
+
+.campos__elemento input {
+    outline: none;
+    border: 0;
+    height: 2.4rem;
+    font-family: var(--fonte-secundaria);
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+.campos__elemento select {
+    outline: none;
+    border: 0;
+    height: 2.4rem;
+    font-family: var(--fonte-secundaria);
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+.form__botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+    width: 10.25rem;
+    height: 3.5rem;
+    background-color: var(--cor-do-cabecalho);
+    filter: drop-shadow(0.2rem 0.2rem var(--cor-da-fonte));
+    font-family: var(--fonte-secundaria);
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+
+.botao__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.botao__container a {
+    text-decoration: none;
+}
+
+.pronto {
+    padding: 3rem 1.5rem 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pronto__titulo {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-da-fonte);
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.pronto__tiquete {
+    background-image: linear-gradient(var(--cor-do-gradiente1),var(--cor-do-gradiente2),var(--cor-do-gradiente3));
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: 0.3rem 0.3rem 1rem var(--cor-da-fonte);
+}
+
+.pronto__logo {
+    width: 7.3rem;
+    height: 2rem;
+}
+
+.pronto__tiquete__cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pronto__tiquete__qrcode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.pronto__tiquete__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte-secundaria);
+}
+
+.pronto__tiquete__texto h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.pronto__tiquete__texto h3 {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+
 .rodape {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 1.5rem;
+    padding: 1.5rem;
     margin: 1rem 0 2.5rem 0;
+    background-color: #FACF9D;
 }
 
 .rodape h3 {

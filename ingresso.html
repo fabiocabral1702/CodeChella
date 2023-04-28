@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <title>CodeChella</title>
+</head>
+<body>
+    <header>
+        <section class="cabecalho">
+            <a href="./index.html"><img src="./img/Logo1.svg" alt="Logo do CodeChella em branco"></a>
+            <div class="container">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu">
+                    <span class="cabecalho__menu-hamburger container__imagem"></span>
+                </label>
+            <!-- <img src="./img/menu.svg" alt="Menu Hamburger"> -->
+            <ul class="lista-menu">
+                <li><a class="lista-menu__item" href="./experiencia.html">A experiência</a></li>
+                <li class="lista-menu__separador"></li>
+                <li><a class="lista-menu__item" href="./setores.html">Mapa de Setores</a></li>
+                <li class="lista-menu__separador"></li>
+                <li><a class="lista-menu__item" href="./informacoes.html">Informações</a></li>
+                <li class="lista-menu__separador"></li>
+                <li><a class="lista-menu__item" href="./ingresso.html">Ingresso</a></li>
+            </ul>
+            </div>
+        </section>
+    </header>
+    <section class="ingresso">
+        <h1>Garanta seu ingresso</h1>
+    </section>
+    <section class="faq">
+        <h2 class="faq__titulo">Preencha o formulário a seguir:</h2>
+        <div class="campos">
+            <div class="campos__elemento">
+                <h2 class="campos__titulo">Nome Completo:</h2>
+                <input type="text" id="nome">
+            </div>
+            <div class="campos__elemento">
+                <h2 class="campos__titulo">Email:</h2>
+                <input type="text" id="email">
+            </div>
+            <div class="campos__elemento">
+                <h2 class="campos__titulo">Tipo de ingresso</h2>
+                <select id="tipo">
+                    <option value="comum">Pista Comum</option>
+                    <option value="premium">Pista Premium</option>
+                    <option value="terreo">Cadeira térreo</option>
+                    <option value="elevada">Cadeira elevada</option>
+                </select>
+            </div>
+            <div class="campos__elemento">
+                <h2 class="campos__titulo">Data de nascimento:</h2>
+                <input type="date" id="data">
+            </div>
+                
+        </div>
+    </section>
+        <div class="botao__container">
+            <a href="./ingresso2.html"><div class="form__botao">
+                <h3 class="form__legenda">Avançar!</h2>
+                <h3 class="material-icons">arrow_forward</h2>
+            </div></a>
+        </div>
+        <footer>
+            <section class="rodape">
+                <div class="rodape__logo">
+                    <img src="./img/Logo1-cinza.svg" alt="Logo do CodeChella em cinza">
+                </div>
+                <h3>Acesse nossas redes:</h3>
+                <div class="rodape__icones">
+                    <a href="#"><img src="./img/Whatsapp.svg" alt="Ícone do Whatsapp"></a>
+                    <a href="#"><img src="./img/Twitch.svg" alt="Ícone do Twitch"></a>
+                    <a href="#"><img src="./img/Insta.svg" alt="Ícone do Instagram"></a>
+                    <a href="#"><img src="./img/Twitter.svg" alt="Ícone do Twitter"></a>
+                </div>
+                <h3>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</h3>
+            </section>
+        </footer>
+    </section>
+</body>
+</html>
